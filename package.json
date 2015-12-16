@@ -1,7 +1,7 @@
 {
-  "name": "gulp-boilerplate",
+  "name": "frontend-boilerplate",
   "version": "0.1.0",
-  "description": "Gulp Boilerplate",
+  "description": "Frontend Boilerplate",
   "main": "gulpfile.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",

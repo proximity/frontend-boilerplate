@@ -1,4 +1,4 @@
-# Gulp Boilerplate
+# Frontend Boilerplate
 
 ## Requirements
 * Node >= 0.9

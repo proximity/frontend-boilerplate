@@ -1,11 +1,11 @@
 {
-  "name": "gulp-boilerplate",
+  "name": "frontend-boilerplate",
   "version": "0.1.0",
   "authors": [],
-  "description": "Gulp Boilerplate",
+  "description": "Frontend Boilerplate",
   "main": "gulpfile.js",
   "license": "MIT",
-  "homepage": "https://github.com/proximity/gulp-boilerplate",
+  "homepage": "https://github.com/proximity/frontend-boilerplate",
   "private": true,
   "ignore": [
     "**/.*",
