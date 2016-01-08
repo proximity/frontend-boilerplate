@@ -25,7 +25,9 @@
     "lodash": "^3.10.0",
     "vinyl-buffer": "^1.0.0",
     "vinyl-source-stream": "^1.1.0",
-    "watchify": "^3.2.3"
+    "watchify": "^3.2.3",
+    "react-dom": "^0.14.6",
+    "react": "^0.14.6"
   },
   "browser": {
     "underscore": "./bower_components/underscore/underscore.js",
