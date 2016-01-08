@@ -1,3 +1,5 @@
+require('es6-promise').polyfill();
+
 var browserify   = require('browserify');
 var gulp         = require('gulp');
 var watch        = require('gulp-watch');

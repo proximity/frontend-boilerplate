@@ -27,7 +27,9 @@
     "vinyl-source-stream": "^1.1.0",
     "watchify": "^3.2.3",
     "react-dom": "^0.14.6",
-    "react": "^0.14.6"
+    "react": "^0.14.6",
+    "yargs": "^3.31.0",
+    "es6-promise": "^3.0.2"
   },
   "browser": {
     "underscore": "./bower_components/underscore/underscore.js",
