@@ -1,5 +1,6 @@
 require('es6-promise').polyfill();
 
+var babelify     = require('babelify');
 var browserify   = require('browserify');
 var gulp         = require('gulp');
 var watch        = require('gulp-watch');
@@ -19,6 +20,9 @@ var collapse     = require('bundle-collapser/plugin');
 var config = {
   autoprefixer: {
     cascade: false,
+  },
+  babel: {
+    presets: ["es2015", "react"]
   },
   browserify: {
     name: 'bundle.js',
@@ -67,7 +71,7 @@ gulp.task('css', function() {
 });
 
 gulp.task('js', function() {
-  var bundler  = browserify(config.browserify.options);
+  var bundler  = browserify(config.browserify.options).transform(babelify, config.babel);
 
   return bundler.plugin(collapse).bundle()
     .on('error', config.browserify.error)
@@ -80,7 +84,7 @@ gulp.task('js', function() {
 
 gulp.task('watch', ['css'], function() {
   var options = assign({}, watchify.args, config.browserify.options);
-  var bundler = watchify(browserify(options));
+  var bundler = watchify(browserify(options).transform(babelify, config.babel));
 
   bundler.on('update', build);
 

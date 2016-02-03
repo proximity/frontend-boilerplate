@@ -1,6 +1,20 @@
-var $ = require('jquery');
-var AppView = require('./views/app');
+import $ from 'jquery';
+import React from 'react';
+import ReactDOM from 'react-dom';
 
-$(function() {
-  var app = new AppView();
+var ReactBox = React.createClass({
+	render: function() {
+		return (
+			<div className="reactBox">
+				<h1>A React Boilerplate</h1>
+			</div>
+		)
+	}
 });
+
+
+
+ReactDOM.render(
+<ReactBox/>,
+	document.getElementById('content')
+);
