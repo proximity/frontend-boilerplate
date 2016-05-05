@@ -7,7 +7,7 @@
 
 ## Installation
 
-Install Node using [NVM](https://github.com/creationix/nvm) or [N](https://github.com/tj/n)
+Install Node using [NVM](https://github.com/creationix/nvm) or [n](https://github.com/tj/n)
 
 	nvm install stable
 	nvm alias default stable
