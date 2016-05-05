@@ -1,6 +1,5 @@
-var $ = require('jquery');
-var AppView = require('./views/app');
+'use strict';
 
-$(function() {
-  var app = new AppView();
-});
+import $ from 'jquery';
+
+console.log("Hello, is it me you're looking for?");

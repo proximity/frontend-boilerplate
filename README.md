@@ -1,31 +1,32 @@
 # Frontend Boilerplate
 
 ## Requirements
-* Node >= 0.9
+* Node >= 5.0
 * Gulp
 * Bower
 
 ## Installation
 
-Install Node using [Homebrew](http://brew.sh) or [NVM](https://github.com/creationix/nvm)
+Install Node using [NVM](https://github.com/creationix/nvm) or [N](https://github.com/tj/n)
 
-	[sudo] brew install node
+	nvm install stable
+	nvm alias default stable
 
 Install [Gulp](http://gulpjs.com) and [Bower](http://bower.io) globally:
 
-	[sudo] npm install -g gulp bower
+	npm install -g gulp-cli bower
 
 Install dependencies:
 
-	[sudo] npm install
+	npm install
 
 ## Tasks
 
 	gulp - Bundle Sass and JavaScript files
-	gulp css - Bundle the Sass files
-	gulp js - Bundle the JavaScript files
+	gulp sass - Bundle the Sass files
+	gulp browserify - Bundle the JavaScript files
 	gulp watch - Watch Sass and JavaScript files and bundle on changes
 
 ### Options
 
-By default, the tasks will compress the files, pass the `-u` flag to stop the compression of files.
+By default, the bundled files will contain source maps, pass the `--production` flag to omit them.

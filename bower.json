@@ -1,25 +1,21 @@
 {
   "name": "frontend-boilerplate",
-  "version": "0.1.0",
-  "authors": [],
+  "version": "1.0.0",
   "description": "Frontend Boilerplate",
-  "main": "gulpfile.js",
-  "license": "MIT",
+  "main": "public/index.html",
+  "authors": [],
+  "license": "ISC",
   "homepage": "https://github.com/proximity/frontend-boilerplate",
   "private": true,
   "ignore": [
     "**/.*",
     "node_modules",
     "bower_components",
+    "components",
     "test",
     "tests"
   ],
   "dependencies": {
-    "jquery": "1.11.3",
-    "backbone": "~1.2.3",
-    "underscore": "~1.8.3",
-    "modernizr": "~2.8.3",
-    "bootstrap-sass": "~3.3.6",
-    "respond": "~1.4.2"
+    "jquery": "^2.2.3"
   }
 }
