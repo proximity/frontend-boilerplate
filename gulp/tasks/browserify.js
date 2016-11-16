@@ -9,7 +9,6 @@ import buffer from 'vinyl-buffer';
 import browserify from 'browserify';
 import watchify from 'watchify';
 import babelify from 'babelify';
-import debowerify from 'debowerify';
 import streamify from 'gulp-streamify';
 import uglify from 'gulp-uglify';
 import {assign} from 'lodash';
@@ -27,7 +26,7 @@ gulp.task('browserify', () => {
 		fullPaths: ! global.isProduction
 	});
 
-	const transforms = [babelify, debowerify];
+	const transforms = [babelify];
 
 	transforms.forEach(function(transform) {
 		bundler.transform(transform);

@@ -1,7 +1,4 @@
 {
   "compact": false,
-  "ignore": [
-    "components"
-  ],
-  "presets": ["es2015"]
+  "presets": ["es2015", "latest"]
 }
